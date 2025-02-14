@@ -1,0 +1,104 @@
+import random
+Group = "0"
+GroupTwo = 0
+ClassMates = ["Saquon", "Jalen", "patrick", "DeVonta", "Travis", "Nick", "Reid", "AJ", "Dingle", "Bingle", "Fingle", "Shingle", "Tingle", "Single", "Pingle", "Jingle", "Xingle", "wingle", "Mingle", "Gingle",]
+random.shuffle(ClassMates)                            #the names of the people
+group1 = (ClassMates[0], ClassMates[1])
+print ("the people in the class are")
+print (ClassMates, "\n")
+
+
+print ("how many would you want in each group, 2, 3&4, 4")      # Banned Inputs
+Group = input()
+print ("who are the students you do not want to work together, make sure you hit enter after entering each name, you may only enter four max, if you enter less than four than you can just leave the space blank and when you enter ")
+BannedNames1 = ("dom","dom","dom","dom")
+print ("first banned name")
+Name1 = input()
+name1 = BannedNames1 [0]           # Taking user input
+print ("second banned name")
+Name2 = input()
+name2 = BannedNames1 [1]
+print ("third banned name")
+Name3 = input()
+name3 = BannedNames1 [2]
+print ("fourth banned name")
+Name4 = input()  
+name4 = BannedNames1 [3]
+
+random.shuffle(ClassMates)
+if Group == "2":       #groups of 2
+# checks the groups for any groups with two or more exclusions togther kinda works
+    if ((ClassMates[0] == BannedNames1[0] or BannedNames1[1] or BannedNames1[2] or BannedNames1[3]) and (ClassMates[1] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2]or BannedNames1[3])) or ((ClassMates[2] == BannedNames1[0] or BannedNames1[1] or BannedNames1[2] or BannedNames1[3]) and (ClassMates[3] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2] or BannedNames1[3])) or ((ClassMates[4] == BannedNames1[0] or BannedNames1[1] or BannedNames1[2] or BannedNames1[3]) and (ClassMates[5] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2] or BannedNames1[3])) or ((ClassMates[4] == BannedNames1[0] or BannedNames1[1] or BannedNames1[2] or BannedNames1[3]) and (ClassMates[5] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2] or BannedNames1[3])) or ((ClassMates[6] == BannedNames1[0] or BannedNames1[1] or BannedNames1[2] or BannedNames1[3]) and (ClassMates[7] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2] or BannedNames1[3])) or ((ClassMates[8] == BannedNames1[0] or BannedNames1[1] or BannedNames1[2] or BannedNames1[3]) and (ClassMates[9] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2] or BannedNames1[3])) or ((ClassMates[10] == BannedNames1[0] or BannedNames1[1] or BannedNames1[2] or BannedNames1[3]) and (ClassMates[11] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2] or BannedNames1[3])) or ((ClassMates[12] == BannedNames1[0] or BannedNames1[1] or BannedNames1[2] or BannedNames1[3]) and (ClassMates[13] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2] or BannedNames1[3])) or ((ClassMates[14] == BannedNames1[0] or BannedNames1[1] or BannedNames1[2] or BannedNames1[3]) and (ClassMates[15] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2] or BannedNames1[3])) or ((ClassMates[16] == BannedNames1[0] or BannedNames1[1] or BannedNames1[2] or BannedNames1[3]) and (ClassMates[17] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2] or BannedNames1[3])) or ((ClassMates[18] == BannedNames1[0] or BannedNames1[1] or BannedNames1[2] or BannedNames1[3]) and (ClassMates[19] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2] or BannedNames1[3])):
+            random.shuffle(ClassMates)   # shuffles the groups if they have two exclusions togther
+       
+          
+    group1 = (ClassMates[0], ClassMates[1])
+    group2 = (ClassMates[2], ClassMates[3])
+    group3 = (ClassMates[4], ClassMates[5])  
+    group4 = (ClassMates[6], ClassMates[7]) 
+    group5 = (ClassMates[8], ClassMates[9])  
+    group6 = (ClassMates[10], ClassMates[11])  
+    group7 = (ClassMates[12], ClassMates[13])  
+    group8 = (ClassMates[14], ClassMates[15])  #makes the groups
+    group9 = (ClassMates[16], ClassMates[17])  
+    group10 = (ClassMates[18], ClassMates[19])
+    print ("the groups are")
+    print (group1)
+    print (group2)
+    print (group3)      # prints the groups
+    print (group4)
+    print (group5)
+    print (group6)
+    print (group7)
+    print (group8)
+    print (group9)
+    print (group10)
+        
+  
+if Group == "3":
+  GroupThree = "3"   #groups of three
+  print ("the groups are")
+  # checks the groups for any groups with two or more exclusions togther   kinda works
+  if (ClassMates[0] == BannedNames1[0] or BannedNames1[1] or BannedNames1[2] or BannedNames1[3] and ClassMates[1] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2]or BannedNames1[3] and ClassMates[2] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2]or BannedNames1[3]) or (ClassMates[3] == BannedNames1[0] or BannedNames1[1] or BannedNames1[2] or BannedNames1[3] and ClassMates[4] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2]or BannedNames1[3] and ClassMates[5] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2]or BannedNames1[3]) or (ClassMates[6] == BannedNames1[0] or BannedNames1[1] or BannedNames1[2] or BannedNames1[3] and ClassMates[1] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2]or BannedNames1[3] and ClassMates[7] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2]or BannedNames1[3]) or (ClassMates[9] == BannedNames1[0] or BannedNames1[1] or BannedNames1[2] or BannedNames1[3] and ClassMates[1] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2]or BannedNames1[3] and ClassMates[7] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2]or BannedNames1[3]) or (ClassMates[12] == BannedNames1[0] or BannedNames1[1] or BannedNames1[2] or BannedNames1[3] and ClassMates[1] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2]or BannedNames1[3] and ClassMates[7] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2]or BannedNames1[3]) or (ClassMates[15] == BannedNames1[0] or BannedNames1[1] or BannedNames1[2] or BannedNames1[3] and ClassMates[1] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2]or BannedNames1[3] and ClassMates[7] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2]or BannedNames1[3]) or (ClassMates[18] == BannedNames1[0] or BannedNames1[1] or BannedNames1[2] or BannedNames1[3] and ClassMates[19] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2]or BannedNames1[3] and ClassMates[7] == BannedNames1[1] or BannedNames1[0] or BannedNames1[2]or BannedNames1[3]):
+     random.shuffle(ClassMates) # shuffles the groups
+      
+  group31 = (ClassMates[0],ClassMates[1],ClassMates[2])
+  group32 = (ClassMates[3],ClassMates[4],ClassMates[5])
+  group33 = (ClassMates[6],ClassMates[7],ClassMates[8])   # makes the groups 
+  group34 = (ClassMates[9],ClassMates[10],ClassMates[11])
+  group35 = (ClassMates[12],ClassMates[13],ClassMates[14])
+  group36 = (ClassMates[15],ClassMates[16],ClassMates[17])
+  group37 = (ClassMates[18],ClassMates[19])
+  print (group31)
+  print (group32)
+  print (group33)
+  print (group34)               #prints the groups
+  print (group35)
+  print (group36)
+  print (group37)
+if Group == "4":     # Groups of 4
+  group41 = (ClassMates[0],ClassMates[1],ClassMates[2],ClassMates[3])  #makes the groups and shuffles if they have banned, doesnt work at all
+  if group41 == BannedNames1:
+    random.shuffle(ClassMates)
+  group42 = (ClassMates[4],ClassMates[5],ClassMates[6],ClassMates[7])
+  if group42 == BannedNames1:
+    random.shuffle(ClassMates)
+  group43 = (ClassMates[8],ClassMates[9],ClassMates[10],ClassMates[11])
+  if group43 == BannedNames1:
+    random.shuffle(ClassMates)
+  group44 = (ClassMates[12],ClassMates[13],ClassMates[14],ClassMates[15])
+  if group44 == BannedNames1:
+    random.shuffle(ClassMates)
+  group45 = (ClassMates[16],ClassMates[17],ClassMates[18],ClassMates[19])
+  if group45 == BannedNames1:
+    random.shuffle(ClassMates)
+  print (group41)
+  print (group42)
+  print (group43)   #prints the groups
+  print (group44)
+  print (group45)
+
+
+
+
+
